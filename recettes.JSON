@@ -1,0 +1,157 @@
+[
+  {
+    "title": "Pâtes carbonara",
+    "ingredients": [
+      "200g de pâtes",
+      "100g de lardons",
+      "2 oeufs",
+      "50g de parmesan",
+      "sel",
+      "poivre"
+    ],
+    "instructions": "Cuire les pâtes. Faire revenir les lardons. Mélanger oeufs et parmesan. Ajouter aux pâtes hors du feu."
+  },
+  {
+    "title": "Salade grecque",
+    "ingredients": [
+      "3 tomates",
+      "1 concombre",
+      "100g de feta",
+      "50g d'olives noires",
+      "1 oignon rouge",
+      "huile d'olive",
+      "origan"
+    ],
+    "instructions": "Couper tomates et concombre. Ajouter feta en dés, olives, oignon émincé. Assaisonner avec huile et origan."
+  },
+  {
+    "title": "Poulet au curry",
+    "ingredients": [
+      "2 blancs de poulet",
+      "1 oignon",
+      "200ml de lait de coco",
+      "2 cuillères de curry en poudre",
+      "huile",
+      "sel",
+      "poivre"
+    ],
+    "instructions": "Faire revenir l'oignon haché. Ajouter le poulet en morceaux et cuire. Verser le lait de coco et le curry. Laisser mijoter 15 minutes."
+  },
+  {
+    "title": "Omelette aux champignons",
+    "ingredients": [
+      "3 oeufs",
+      "100g de champignons",
+      "1 échalote",
+      "beurre",
+      "sel",
+      "poivre"
+    ],
+    "instructions": "Faire revenir échalote et champignons dans du beurre. Battre les oeufs, assaisonner. Verser dans la poêle et cuire l'omelette."
+  },
+  {
+    "title": "Soupe de légumes",
+    "ingredients": [
+      "2 carottes",
+      "2 pommes de terre",
+      "1 poireau",
+      "1 courgette",
+      "1 litre d'eau",
+      "sel",
+      "poivre"
+    ],
+    "instructions": "Couper les légumes en morceaux. Mettre dans une casserole avec l’eau. Cuire 30 minutes. Mixer la soupe."
+  },
+  {
+    "title": "Ratatouille",
+    "ingredients": [
+      "1 aubergine",
+      "1 courgette",
+      "1 poivron",
+      "2 tomates",
+      "1 oignon",
+      "huile d'olive",
+      "ail",
+      "herbes de Provence"
+    ],
+    "instructions": "Couper tous les légumes en dés. Faire revenir oignon et ail. Ajouter les légumes et les herbes. Laisser mijoter 40 minutes."
+  },
+  {
+    "title": "Tarte aux pommes",
+    "ingredients": [
+      "1 pâte brisée",
+      "3 pommes",
+      "50g de sucre",
+      "20g de beurre",
+      "cannelle"
+    ],
+    "instructions": "Étaler la pâte dans un moule. Disposer les pommes tranchées. Saupoudrer de sucre et cannelle. Parsemer de beurre. Cuire 30 minutes au four à 180°C."
+  },
+  {
+    "title": "Quiche lorraine",
+    "ingredients": [
+      "1 pâte brisée",
+      "150g de lardons",
+      "3 oeufs",
+      "200ml de crème fraîche",
+      "100ml de lait",
+      "sel",
+      "poivre"
+    ],
+    "instructions": "Cuire les lardons. Battre oeufs, crème et lait. Verser sur la pâte avec les lardons. Cuire au four 35 minutes à 180°C."
+  },
+  {
+    "title": "Salade de quinoa",
+    "ingredients": [
+      "150g de quinoa",
+      "1 avocat",
+      "1 tomate",
+      "1 concombre",
+      "50g de pois chiches",
+      "jus de citron",
+      "huile d'olive",
+      "sel",
+      "poivre"
+    ],
+    "instructions": "Cuire le quinoa. Couper avocat, tomate et concombre. Mélanger avec pois chiches. Assaisonner avec citron, huile, sel et poivre."
+  },
+  {
+    "title": "Crêpes",
+    "ingredients": [
+      "250g de farine",
+      "3 oeufs",
+      "500ml de lait",
+      "1 cuillère de sucre",
+      "1 pincée de sel",
+      "20g de beurre fondu"
+    ],
+    "instructions": "Mélanger farine, sucre et sel. Ajouter oeufs puis lait progressivement. Incorporer beurre fondu. Cuire les crêpes dans une poêle chaude."
+  },
+  {
+    "title": "Gratin dauphinois",
+    "ingredients": [
+      "600g de pommes de terre",
+      "200ml de crème",
+      "100ml de lait",
+      "1 gousse d'ail",
+      "beurre",
+      "sel",
+      "poivre"
+    ],
+    "instructions": "Éplucher et couper les pommes de terre en fines tranches. Frotter un plat avec ail et beurre. Disposer les pommes de terre, verser crème et lait. Cuire 1h à 180°C."
+  },
+  {
+    "title": "Spaghetti bolognaise",
+    "ingredients": [
+      "200g de spaghetti",
+      "150g de viande hachée",
+      "1 oignon",
+      "1 carotte",
+      "200g de tomates concassées",
+      "huile d'olive",
+      "sel",
+      "poivre"
+    ],
+    "instructions": "Faire revenir oignon et carotte. Ajouter viande hachée et cuire. Verser tomates et assaisonner. Laisser mijoter 30 minutes. Servir avec spaghetti cuits."
+  }
+]
