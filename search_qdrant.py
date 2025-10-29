@@ -46,7 +46,7 @@ queries = [
 for q in queries:
     print("\n\n===> Question :", q)
     qv = model.encode(q).tolist()
-    res = client.query_points(collection_name="recettes", query_vector=qv, limit=3).points
+    res = client.search(collection_name="recettes", query_vector=qv, limit=3)
     for r in res:
         print(f" - {r.payload['title']} (score={r.score:.3f})")
 
