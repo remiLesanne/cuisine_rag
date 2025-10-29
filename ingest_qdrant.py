@@ -26,7 +26,10 @@ points = [
     {
         "id": i,
         "vector": v,
-        "payload": {"title": doc.meta["title"]}
+        "payload": {
+            "title": doc.meta["title"],
+            "content": doc.content
+        }
     }
     for i, (v, doc) in enumerate(zip(vectors, docs))
 ]
