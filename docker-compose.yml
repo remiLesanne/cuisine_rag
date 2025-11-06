@@ -3,6 +3,16 @@ services:
     image: qdrant/qdrant
     ports:
       - "6333:6333"
-      - "6334:6334"
     volumes:
       - ./qdrant_storage:/qdrant/storage:z
+      
+  rag_engine:
+    build:
+      context: ./rag_engine  # ton Dockerfile de rag_engine
+    container_name: rag_engine
+    env_file:
+      - ./rag_engine/.env
+    depends_on:
+      - qdrant
+    volumes:
+      - ./data:/app/data  # pour que les recettes soient accessibles dans le conteneur

@@ -1,10 +1,17 @@
+import os
+from dotenv import load_dotenv
 import json 
 from haystack.schema import Document
 from sentence_transformers import SentenceTransformer
 import pickle
+# Load environment variables from .env file
+load_dotenv() 
 
+DATA_PATH = os.path.join(os.path.dirname(__file__), "../data/recettes.json")
+DOCS_PATH = os.path.join(os.path.dirname(__file__), "documents.pkl")
+VECTORS_PATH = os.path.join(os.path.dirname(__file__), "vectors.pkl")
 
-with open('data/recettes.json', 'r',encoding="utf-8") as f:
+with open(DATA_PATH, 'r',encoding="utf-8") as f:
     recettes = json.load(f)
 
 docs = []
@@ -23,8 +30,8 @@ for r in recettes:
 embedding_model = SentenceTransformer("all-MiniLM-L6-v2")
 vectors = [embedding_model.encode(doc.content).tolist() for doc in docs]
 
-with open("documents.pkl", "wb") as f:
+with open(DOCS_PATH, "wb") as f:
     pickle.dump(docs, f)
     
-with open("vectors.pkl", "wb") as f:
+with open(VECTORS_PATH, "wb") as f:
     pickle.dump(vectors, f)
