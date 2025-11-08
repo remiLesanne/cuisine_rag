@@ -1,14 +1,22 @@
+import os
+from dotenv import load_dotenv
 from qdrant_client import QdrantClient
 from sentence_transformers import SentenceTransformer
 
+load_dotenv()  
+QDRANT_HOST = os.getenv("QDRANT_HOST")
+QDRANT_PORT = int(os.getenv("QDRANT_PORT"))
+COLLECTION_NAME = os.getenv("QDRANT_COLLECTION")
+EMBEDDING_MODEL = os.getenv("EMBEDDING_MODEL")
+
 # Connexion à Qdrant
-client = QdrantClient(host="localhost", port=6333)
+client = QdrantClient(host=QDRANT_HOST, port=QDRANT_PORT)
 print(client.get_collections())
 #print(client.get_collection("recettes"))
-print(client.count("recettes"))
+print(client.count(COLLECTION_NAME))
 
 # Charger le même modèle que pour les embeddings
-model = SentenceTransformer("all-MiniLM-L6-v2")
+model = SentenceTransformer(EMBEDDING_MODEL)
 
 # Exemple de requête utilisateur
 query = "Je veux faire un plat avec des pâtes et du fromage, que puis-je préparer ?"
@@ -46,7 +54,7 @@ queries = [
 for q in queries:
     print("\n\n===> Question :", q)
     qv = model.encode(q).tolist()
-    res = client.search(collection_name="recettes", query_vector=qv, limit=3)
+    res = client.search(collection_name=COLLECTION_NAME, query_vector=qv, limit=3)
     for r in res:
         print(f" - {r.payload['title']} (score={r.score:.3f})")
 
