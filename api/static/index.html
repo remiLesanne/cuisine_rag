@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cuisine RAG - Assistant Culinaire</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f4f4f9;
+            color: #333;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        h1 {
+            text-align: center;
+            color: #2c3e50;
+        }
+        .search-container {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 30px;
+        }
+        input[type="text"] {
+            width: 70%;
+            padding: 12px;
+            border: 1px solid #ddd;
+            border-radius: 4px 0 0 4px;
+            font-size: 16px;
+            outline: none;
+        }
+        button {
+            padding: 12px 24px;
+            background-color: #e67e22;
+            color: white;
+            border: none;
+            border-radius: 0 4px 4px 0;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background-color 0.3s;
+        }
+        button:hover {
+            background-color: #d35400;
+        }
+        #results {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+        .result-card {
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        .result-title {
+            font-size: 1.2em;
+            font-weight: bold;
+            color: #e67e22;
+            margin-bottom: 10px;
+        }
+        .result-score {
+            font-size: 0.9em;
+            color: #7f8c8d;
+            margin-bottom: 10px;
+        }
+        .result-content {
+            line-height: 1.6;
+        }
+        .loading {
+            text-align: center;
+            display: none;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>👨‍🍳 Assistant Culinaire</h1>
+    
+    <div class="search-container">
+        <input type="text" id="query" placeholder="Que voulez-vous cuisiner aujourd'hui ? (ex: pâtes au fromage)" onkeypress="handleKeyPress(event)">
+        <button onclick="performSearch()">Rechercher</button>
+    </div>
+
+    <div id="loading" class="loading">Recherche en cours...</div>
+    <div id="results"></div>
+
+    <script>
+        async function performSearch() {
+            const query = document.getElementById('query').value;
+            if (!query) return;
+
+            const loading = document.getElementById('loading');
+            const resultsDiv = document.getElementById('results');
+            
+            loading.style.display = 'block';
+            resultsDiv.innerHTML = '';
+
+            try {
+                const response = await fetch('/search', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify({ query: query, limit: 5 }),
+                });
+
+                const data = await response.json();
+                
+                loading.style.display = 'none';
+
+                if (data.length === 0) {
+                    resultsDiv.innerHTML = '<p style="text-align:center">Aucune recette trouvée.</p>';
+                    return;
+                }
+
+                data.forEach(item => {
+                    const card = document.createElement('div');
+                    card.className = 'result-card';
+                    card.innerHTML = `
+                        <div class="result-title">${item.title}</div>
+                        <div class="result-score">Pertinence: ${(item.score * 100).toFixed(1)}%</div>
+                        <div class="result-content">${item.content}</div>
+                    `;
+                    resultsDiv.appendChild(card);
+                });
+            } catch (error) {
+                console.error('Error:', error);
+                loading.style.display = 'none';
+                resultsDiv.innerHTML = '<p style="text-align:center; color:red">Une erreur est survenue.</p>';
+            }
+        }
+
+        function handleKeyPress(event) {
+            if (event.key === 'Enter') {
+                performSearch();
+            }
+        }
+    </script>
+
+</body>
+</html>
