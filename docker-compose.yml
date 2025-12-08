@@ -5,14 +5,28 @@ services:
       - "6333:6333"
     volumes:
       - ./qdrant_storage:/qdrant/storage:z
-      
+
   rag_engine:
     build:
-      context: ./rag_engine  # ton Dockerfile de rag_engine
+      context: ./rag_engine
     container_name: rag_engine
     env_file:
-      - ./rag_engine/.env
+      - .env
     depends_on:
       - qdrant
     volumes:
-      - ./data:/app/data  # pour que les recettes soient accessibles dans le conteneur
+      - ./data:/app/data
+
+  api:
+    build:
+      context: .
+      dockerfile: api/Dockerfile
+    container_name: cuisine_api
+    ports:
+      - "8000:8000"
+    env_file:
+      - .env
+    depends_on:
+      - qdrant
+    volumes:
+      - ./data:/app/data
