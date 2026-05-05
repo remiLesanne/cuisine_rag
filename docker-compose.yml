@@ -10,9 +10,24 @@ services:
     build:
       context: ./rag_engine  # ton Dockerfile de rag_engine
     container_name: rag_engine
-    env_file:
-      - ./rag_engine/.env
+    env_file: .env  
     depends_on:
       - qdrant
     volumes:
-      - ./data:/app/data  # pour que les recettes soient accessibles dans le conteneur
+      - ./data:/data  # pour que les recettes soient accessibles dans le conte  neur
+      - ./rag_engine:/app
+
+    command: tail -f /dev/null  # pour garder le conteneur en vie, tu remplaceras ça par la commande de ton moteur RAG
+  
+  api:
+    build:
+      context: ./api
+    container_name: api
+    env_file: .env
+    ports:
+      - "8000:8000"
+    depends_on:
+      - qdrant
+    volumes:
+      - ./api:/app
+      - ./rag_engine:/app/rag_engine  # pour que l'API puisse accéder au code de rag_engine

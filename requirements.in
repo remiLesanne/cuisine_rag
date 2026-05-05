@@ -1,3 +1,5 @@
-farm-haystack
+# requirements.in — juste un mémo, pas utilisé par Docker
 sentence-transformers
 qdrant-client
+fastapi
+uvicorn

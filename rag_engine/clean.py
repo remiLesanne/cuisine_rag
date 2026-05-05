@@ -1,8 +1,8 @@
 import os
 from dotenv import load_dotenv
 import json 
-from haystack.schema import Document
 from sentence_transformers import SentenceTransformer
+from dataclasses import dataclass, field 
 import pickle
 # Load environment variables from .env file
 load_dotenv() 
@@ -10,6 +10,12 @@ load_dotenv()
 DATA_PATH = os.path.join(os.path.dirname(__file__), "../data/recettes.json")
 DOCS_PATH = os.path.join(os.path.dirname(__file__), "documents.pkl")
 VECTORS_PATH = os.path.join(os.path.dirname(__file__), "vectors.pkl")
+
+@dataclass
+class Document:
+    content: str
+    meta: dict = field(default_factory=dict)
+
 
 with open(DATA_PATH, 'r',encoding="utf-8") as f:
     recettes = json.load(f)

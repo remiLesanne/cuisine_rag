@@ -1,8 +1,16 @@
 import os
 from dotenv import load_dotenv
 from qdrant_client import QdrantClient
+from dataclasses import dataclass, field 
 from qdrant_client.models import VectorParams, Distance
 import pickle
+
+
+@dataclass
+class Document:
+    content: str
+    meta: dict = field(default_factory=dict)
+
 
 load_dotenv()  # Charger les variables d'environnement depuis le fichier .env
 #debug

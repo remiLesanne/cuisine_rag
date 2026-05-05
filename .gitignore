@@ -1,8 +1,31 @@
+# Python
 .venv/
+venv/
 __pycache__/
+*.py[cod]
+*.egg-info/
+dist/
+build/
+
+# Data générée
 *.pkl
 
+# Qdrant
 qdrant_storage/
 
-rag_engine/__init__.py
+# Environnement
 .env
+.env.*
+!.env.example    
+
+# Docker
+docker-compose.override.yml
+
+# IDE
+.vscode/
+.idea/
+*.swp
+
+# OS
+.DS_Store
+Thumbs.db
