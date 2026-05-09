@@ -1,0 +1,9 @@
+# Gemini CLI Ignore File
+# Prevents the agent from reading sensitive or unnecessary files.
+
+.env
+.env.*
+.venv/
+node_modules/
+__pycache__/
+*.pkl

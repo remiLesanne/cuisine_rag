@@ -26,7 +26,12 @@ def search(query: Query):
         limit=query.limit
     )
     return [
-        {"title": r.payload["title"], "content": r.payload["content"], "score": r.score}
+        {
+        "title": r.payload["title"],
+        "ingredients": r.payload["ingredients"],
+        "instructions": r.payload["instructions"],
+        "score": r.score
+    }
         for r in results
     ]
 

@@ -5,11 +5,11 @@
       "200g de pâtes",
       "100g de lardons",
       "2 oeufs",
-      "50g de parmesan",
+      "50g de parmesan râpé",
       "sel",
-      "poivre"
+      "poivre noir"
     ],
-    "instructions": "Cuire les pâtes. Faire revenir les lardons. Mélanger oeufs et parmesan. Ajouter aux pâtes hors du feu."
+    "instructions": "Cuire les pâtes al dente dans de l'eau salée. Faire revenir les lardons à sec dans une poêle. Dans un bol, mélanger les oeufs battus avec le parmesan râpé. Égoutter les pâtes, les ajouter aux lardons hors du feu. Verser le mélange oeuf-parmesan et mélanger rapidement. Poivrer généreusement."
   },
   {
     "title": "Salade grecque",
@@ -19,10 +19,10 @@
       "100g de feta",
       "50g d'olives noires",
       "1 oignon rouge",
-      "huile d'olive",
-      "origan"
+      "3 cuillères à soupe d'huile d'olive",
+      "origan séché"
     ],
-    "instructions": "Couper tomates et concombre. Ajouter feta en dés, olives, oignon émincé. Assaisonner avec huile et origan."
+    "instructions": "Couper les tomates en quartiers et le concombre en rondelles. Émincer finement l'oignon rouge. Couper la feta en dés. Disposer tous les légumes dans un saladier. Ajouter les olives et la feta. Arroser d'huile d'olive et saupoudrer d'origan."
   },
   {
     "title": "Poulet au curry",
@@ -30,24 +30,24 @@
       "2 blancs de poulet",
       "1 oignon",
       "200ml de lait de coco",
-      "2 cuillères de curry en poudre",
-      "huile",
+      "2 cuillères à soupe de curry en poudre",
+      "1 cuillère à soupe d'huile",
       "sel",
       "poivre"
     ],
-    "instructions": "Faire revenir l'oignon haché. Ajouter le poulet en morceaux et cuire. Verser le lait de coco et le curry. Laisser mijoter 15 minutes."
+    "instructions": "Émincer l'oignon et le faire revenir dans l'huile jusqu'à transparence. Couper le poulet en morceaux et l'ajouter à la poêle. Faire dorer 5 minutes. Saupoudrer de curry, mélanger. Verser le lait de coco et laisser mijoter 15 minutes à feu doux. Saler et poivrer."
   },
   {
     "title": "Omelette aux champignons",
     "ingredients": [
       "3 oeufs",
-      "100g de champignons",
+      "100g de champignons de Paris",
       "1 échalote",
-      "beurre",
+      "20g de beurre",
       "sel",
       "poivre"
     ],
-    "instructions": "Faire revenir échalote et champignons dans du beurre. Battre les oeufs, assaisonner. Verser dans la poêle et cuire l'omelette."
+    "instructions": "Émincer l'échalote et couper les champignons en lamelles. Faire fondre le beurre dans une poêle et faire revenir l'échalote et les champignons 5 minutes. Battre les oeufs en omelette, saler et poivrer. Verser les oeufs sur les champignons et cuire à feu moyen jusqu'à la consistance désirée."
   },
   {
     "title": "Soupe de légumes",
@@ -60,60 +60,61 @@
       "sel",
       "poivre"
     ],
-    "instructions": "Couper les légumes en morceaux. Mettre dans une casserole avec l’eau. Cuire 30 minutes. Mixer la soupe."
+    "instructions": "Éplucher et couper tous les légumes en morceaux. Mettre dans une casserole avec l'eau froide. Porter à ébullition puis laisser cuire 30 minutes à feu moyen. Saler et poivrer. Mixer la soupe jusqu'à obtenir une texture lisse."
   },
   {
     "title": "Ratatouille",
     "ingredients": [
       "1 aubergine",
       "1 courgette",
-      "1 poivron",
+      "1 poivron rouge",
       "2 tomates",
       "1 oignon",
-      "huile d'olive",
-      "ail",
+      "3 cuillères à soupe d'huile d'olive",
+      "2 gousses d'ail",
       "herbes de Provence"
     ],
-    "instructions": "Couper tous les légumes en dés. Faire revenir oignon et ail. Ajouter les légumes et les herbes. Laisser mijoter 40 minutes."
+    "instructions": "Couper tous les légumes en dés de taille égale. Faire chauffer l'huile dans une grande poêle et faire revenir l'oignon et l'ail émincé 3 minutes. Ajouter l'aubergine et le poivron, cuire 5 minutes. Ajouter courgette et tomates. Saupoudrer d'herbes de Provence. Laisser mijoter 40 minutes à feu doux en remuant régulièrement."
   },
   {
     "title": "Tarte aux pommes",
     "ingredients": [
       "1 pâte brisée",
-      "3 pommes",
+      "3 pommes Golden",
       "50g de sucre",
       "20g de beurre",
-      "cannelle"
+      "1 cuillère à café de cannelle"
     ],
-    "instructions": "Étaler la pâte dans un moule. Disposer les pommes tranchées. Saupoudrer de sucre et cannelle. Parsemer de beurre. Cuire 30 minutes au four à 180°C."
+    "instructions": "Préchauffer le four à 180°C. Étaler la pâte dans un moule à tarte. Éplucher et couper les pommes en fines tranches. Disposer les tranches de pommes en rosace sur la pâte. Mélanger le sucre et la cannelle et saupoudrer sur les pommes. Parsemer de petits morceaux de beurre. Cuire 30 minutes jusqu'à dorure."
   },
   {
     "title": "Quiche lorraine",
     "ingredients": [
       "1 pâte brisée",
-      "150g de lardons",
+      "150g de lardons fumés",
       "3 oeufs",
-      "200ml de crème fraîche",
+      "200ml de crème fraîche épaisse",
       "100ml de lait",
       "sel",
-      "poivre"
+      "poivre",
+      "noix de muscade"
     ],
-    "instructions": "Cuire les lardons. Battre oeufs, crème et lait. Verser sur la pâte avec les lardons. Cuire au four 35 minutes à 180°C."
+    "instructions": "Préchauffer le four à 180°C. Faire revenir les lardons à la poêle sans matière grasse. Étaler la pâte dans un moule et piquer le fond. Battre les oeufs avec la crème et le lait. Saler, poivrer et ajouter une pincée de muscade. Répartir les lardons sur la pâte et verser l'appareil. Cuire 35 minutes."
   },
   {
     "title": "Salade de quinoa",
     "ingredients": [
       "150g de quinoa",
-      "1 avocat",
+      "1 avocat mûr",
       "1 tomate",
       "1 concombre",
-      "50g de pois chiches",
-      "jus de citron",
-      "huile d'olive",
+      "50g de pois chiches cuits",
+      "2 cuillères à soupe de jus de citron",
+      "2 cuillères à soupe d'huile d'olive",
       "sel",
       "poivre"
     ],
-    "instructions": "Cuire le quinoa. Couper avocat, tomate et concombre. Mélanger avec pois chiches. Assaisonner avec citron, huile, sel et poivre."
+    "instructions": "Rincer le quinoa et le cuire dans deux fois son volume d'eau pendant 12 minutes. Laisser refroidir. Couper l'avocat, la tomate et le concombre en petits dés. Dans un saladier, mélanger le quinoa refroidi, les légumes et les pois chiches. Assaisonner avec le jus de citron, l'huile d'olive, le sel et le poivre."
   },
   {
     "title": "Crêpes",
@@ -121,37 +122,38 @@
       "250g de farine",
       "3 oeufs",
       "500ml de lait",
-      "1 cuillère de sucre",
+      "1 cuillère à soupe de sucre",
       "1 pincée de sel",
       "20g de beurre fondu"
     ],
-    "instructions": "Mélanger farine, sucre et sel. Ajouter oeufs puis lait progressivement. Incorporer beurre fondu. Cuire les crêpes dans une poêle chaude."
+    "instructions": "Dans un saladier, mélanger la farine, le sucre et le sel. Creuser un puits et y casser les oeufs. Mélanger en incorporant progressivement le lait pour éviter les grumeaux. Ajouter le beurre fondu. Laisser reposer 30 minutes. Cuire les crêpes dans une poêle chaude légèrement beurrée."
   },
   {
     "title": "Gratin dauphinois",
     "ingredients": [
       "600g de pommes de terre",
-      "200ml de crème",
+      "200ml de crème liquide entière",
       "100ml de lait",
       "1 gousse d'ail",
-      "beurre",
+      "20g de beurre",
       "sel",
-      "poivre"
+      "poivre",
+      "noix de muscade"
     ],
-    "instructions": "Éplucher et couper les pommes de terre en fines tranches. Frotter un plat avec ail et beurre. Disposer les pommes de terre, verser crème et lait. Cuire 1h à 180°C."
+    "instructions": "Préchauffer le four à 180°C. Éplucher et couper les pommes de terre en fines tranches régulières. Frotter un plat à gratin avec l'ail et le beurrer. Disposer les pommes de terre en couches. Mélanger la crème et le lait, saler, poivrer et râper un peu de muscade. Verser sur les pommes de terre. Cuire 1 heure jusqu'à dorure."
   },
   {
     "title": "Spaghetti bolognaise",
     "ingredients": [
       "200g de spaghetti",
-      "150g de viande hachée",
+      "150g de viande hachée de boeuf",
       "1 oignon",
       "1 carotte",
       "200g de tomates concassées",
-      "huile d'olive",
+      "1 cuillère à soupe d'huile d'olive",
       "sel",
       "poivre"
     ],
-    "instructions": "Faire revenir oignon et carotte. Ajouter viande hachée et cuire. Verser tomates et assaisonner. Laisser mijoter 30 minutes. Servir avec spaghetti cuits."
+    "instructions": "Émincer l'oignon et couper la carotte en petits dés. Les faire revenir dans l'huile d'olive 5 minutes. Ajouter la viande hachée et faire dorer en l'émiettant. Verser les tomates concassées, saler et poivrer. Laisser mijoter 30 minutes à feu doux. Cuire les spaghetti al dente et les servir avec la bolognaise."
   }
 ]

@@ -25,6 +25,8 @@ QDRANT_HOST = os.getenv("QDRANT_HOST")
 QDRANT_PORT = int(os.getenv("QDRANT_PORT"))
 COLLECTION_NAME = os.getenv("QDRANT_COLLECTION")
 EMBEDDING_MODEL = os.getenv("EMBEDDING_MODEL")
+vector_size = int(os.getenv("EMBEDDING_DIM"))
+
 
 #debug
 print("QDRANT_PORT =", os.getenv("QDRANT_PORT"))
@@ -32,13 +34,14 @@ print("QDRANT_HOST =", os.getenv("QDRANT_HOST"))
 print("COLLECTION_NAME =", os.getenv("QDRANT_COLLECTION"))
 print("EMBEDDING_MODEL =", os.getenv("EMBEDDING_MODEL"))
 
+
 # Connexion à Qdrant local depuis le .env
 client = QdrantClient(host=QDRANT_HOST, port=QDRANT_PORT)
 
 client.recreate_collection( #attention bientot obsolète la méthode
     collection_name=COLLECTION_NAME,
     vectors_config=VectorParams(
-        size=384,
+        size=vector_size,
         distance=Distance.COSINE
     )
 )
@@ -53,12 +56,14 @@ with open(VECTORS_PATH, "rb") as f:
 print(docs[0].meta)  # doit afficher {"title": "Spaghetti bolognaise"} par ex.
 
 points = [
-    {
+    {   
         "id": i,
         "vector": v,
         "payload": {
             "title": doc.meta["title"],
-            "content": doc.content
+            "content": doc.content,
+            "ingredients": doc.meta["ingredients"],
+            "instructions": doc.meta["instructions"]
         }
     }
     for i, (v, doc) in enumerate(zip(vectors, docs))

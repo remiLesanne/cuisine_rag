@@ -10,6 +10,7 @@ load_dotenv()
 DATA_PATH = os.path.join(os.path.dirname(__file__), "../data/recettes.json")
 DOCS_PATH = os.path.join(os.path.dirname(__file__), "documents.pkl")
 VECTORS_PATH = os.path.join(os.path.dirname(__file__), "vectors.pkl")
+MODEL_NAME = os.getenv("EMBEDDING_MODEL")
 
 @dataclass
 class Document:
@@ -22,18 +23,25 @@ with open(DATA_PATH, 'r',encoding="utf-8") as f:
 
 docs = []
 for r in recettes:
+    
+    ingredients_text = ", ".join(r['ingredients'])
+
     text = (
         f"Recette: {r['title']}\n"
-        f"Ingrédients: {r['ingredients']}\n"
+        f"Ingrédients: {ingredients_text}\n"
         f"Instructions: {r['instructions']}"
     )
     doc = Document(
     content=text,
-    meta={"title": r["title"]} 
+    meta={
+        "title": r["title"],
+        "ingredients": r["ingredients"],
+        "instructions": r["instructions"]
+    } 
     )
     docs.append(doc)
 
-embedding_model = SentenceTransformer("all-MiniLM-L6-v2")
+embedding_model = SentenceTransformer(MODEL_NAME)
 vectors = [embedding_model.encode(doc.content).tolist() for doc in docs]
 
 with open(DOCS_PATH, "wb") as f:
