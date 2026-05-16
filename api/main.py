@@ -14,6 +14,8 @@ load_dotenv()
 OLLAMA_HOST = os.getenv("OLLAMA_HOST")
 OLLAMA_MODEL = os.getenv("OLLAMA_MODEL")
 COLLECTION_NAME = os.getenv("QDRANT_COLLECTION")
+HISTORY_LIMIT = int(os.getenv("HISTORY_LIMIT", 6))  # ← 3 échanges max par défaut
+
 
 # — Clients —
 ollama_client = ollama.Client(OLLAMA_HOST)
@@ -30,8 +32,19 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
+# — Modèles Pydantic —
+
 class Query(BaseModel):
     question: str
+
+class Message(BaseModel):
+    role: str
+    content: str
+
+class ChatQuery(BaseModel):
+    question : str
+    history: list[Message] = []
+
 
 # — Fonction utilitaire partagée —
 def vector_search(question: str) -> list:
@@ -111,3 +124,40 @@ def ask(query: Query):
         generate(),
         media_type="text/plain"
     )
+
+@app.post("/chat")
+def chat(query: ChatQuery):
+    # 1. Recherche vectorielle basée sur la question actuelle
+    results = vector_search(query.question)
+    context = build_context(results)
+
+    # 2. Message système avec le contexte des recettes
+    messages = [
+        {
+            "role": "system",
+            "content": f"""Tu es un assistant culinaire expert en cuisine française.
+            Réponds uniquement à partir des recettes fournies dans le contexte.
+            Si la question ne concerne pas la cuisine ou les recettes, réponds poliment que tu ne peux aider que sur ce sujet.
+            Contexte des recettes disponibles :
+            {context}"""
+        }
+    ]
+
+    # 3. Ajouter l'historique limité
+    recent_history = query.history[-HISTORY_LIMIT:]
+    for msg in recent_history:
+        messages.append({"role": msg.role, "content": msg.content})
+
+    # 4. Ajouter la question actuelle
+    messages.append({"role": "user", "content": query.question})
+
+    # 5. Stream la réponse
+    def generate():
+        for chunk in ollama_client.chat(
+            model=OLLAMA_MODEL,
+            messages=messages,
+            stream=True,
+        ):
+            yield chunk.message.content
+
+    return StreamingResponse(generate(), media_type="text/plain")
