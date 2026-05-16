@@ -8,34 +8,38 @@ services:
       
   rag_engine:
     build:
-      context: ./rag_engine  # ton Dockerfile de rag_engine
+      context: ./rag_engine
     container_name: rag_engine
     env_file: .env  
     depends_on:
       - qdrant
     volumes:
-      - ./data:/data  # pour que les recettes soient accessibles dans le conte  neur
+      - ./data:/data
       - ./rag_engine:/app
-
-    command: tail -f /dev/null  # pour garder le conteneur en vie, tu remplaceras ça par la commande de ton moteur RAG
+    command: sh -c "python clean.py && python ingest_qdrant.py"
   
   api:
     build:
       context: ./api
     container_name: api
     env_file: .env
+    environment:
+      - DEFAULT_SEARCH_LIMIT=${DEFAULT_SEARCH_LIMIT}
     ports:
       - "8000:8000"
     depends_on:
       - qdrant
     volumes:
       - ./api:/app
-      - ./rag_engine:/app/rag_engine  # pour que l'API puisse accéder au code de rag_engine
+      - ./rag_engine:/app/rag_engine
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
 
-    frontend:
+  frontend:
     build:
       context: ./frontend
     container_name: frontend
+    env_file: .env
     ports:
       - "3000:3000"
     volumes:
@@ -44,5 +48,6 @@ services:
       - /app/.next
     environment:
       - NEXT_PUBLIC_API_URL=http://localhost:8000
+      - NEXT_PUBLIC_SEARCH_LIMIT=${DEFAULT_SEARCH_LIMIT}
     depends_on:
       - api

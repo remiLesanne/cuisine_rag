@@ -2,14 +2,14 @@
   {
     "title": "Pâtes carbonara",
     "ingredients": [
-      "200g de pâtes",
-      "100g de lardons",
+      "200g de spaghetti",
+      "100g de lardons fumés",
       "2 oeufs",
       "50g de parmesan râpé",
       "sel",
       "poivre noir"
     ],
-    "instructions": "Cuire les pâtes al dente dans de l'eau salée. Faire revenir les lardons à sec dans une poêle. Dans un bol, mélanger les oeufs battus avec le parmesan râpé. Égoutter les pâtes, les ajouter aux lardons hors du feu. Verser le mélange oeuf-parmesan et mélanger rapidement. Poivrer généreusement."
+    "instructions": "Cuire les spaghetti al dente dans de l'eau salée. Faire revenir les lardons à sec dans une poêle. Dans un bol, mélanger les oeufs battus avec le parmesan râpé. Égoutter les pâtes, les ajouter aux lardons hors du feu. Verser le mélange oeuf-parmesan et mélanger rapidement. Poivrer généreusement."
   },
   {
     "title": "Salade grecque",
@@ -155,5 +155,549 @@
       "poivre"
     ],
     "instructions": "Émincer l'oignon et couper la carotte en petits dés. Les faire revenir dans l'huile d'olive 5 minutes. Ajouter la viande hachée et faire dorer en l'émiettant. Verser les tomates concassées, saler et poivrer. Laisser mijoter 30 minutes à feu doux. Cuire les spaghetti al dente et les servir avec la bolognaise."
+  },
+  {
+    "title": "Boeuf bourguignon",
+    "ingredients": [
+      "800g de boeuf à braiser",
+      "200g de lardons fumés",
+      "1 bouteille de vin rouge",
+      "2 carottes",
+      "1 oignon",
+      "200g de champignons de Paris",
+      "2 gousses d'ail",
+      "1 bouquet garni",
+      "2 cuillères à soupe d'huile",
+      "sel",
+      "poivre"
+    ],
+    "instructions": "Couper le boeuf en gros cubes et le faire dorer dans l'huile. Ajouter les lardons, l'oignon émincé et les carottes en rondelles. Verser le vin rouge et ajouter l'ail et le bouquet garni. Laisser mijoter 2h30 à feu doux. Ajouter les champignons 30 minutes avant la fin. Saler et poivrer."
+  },
+  {
+    "title": "Risotto aux champignons",
+    "ingredients": [
+      "300g de riz arborio",
+      "200g de champignons de Paris",
+      "1 oignon",
+      "100ml de vin blanc",
+      "1 litre de bouillon de légumes",
+      "50g de parmesan râpé",
+      "30g de beurre",
+      "sel",
+      "poivre"
+    ],
+    "instructions": "Faire revenir l'oignon émincé dans le beurre. Ajouter le riz et le faire nacrer 2 minutes. Verser le vin blanc et laisser absorber. Ajouter le bouillon chaud louche par louche en remuant constamment. Faire revenir les champignons séparément. Les incorporer au risotto en fin de cuisson. Ajouter le parmesan et mantecarer."
+  },
+  {
+    "title": "Salade niçoise",
+    "ingredients": [
+      "2 oeufs durs",
+      "1 boîte de thon",
+      "200g de haricots verts",
+      "2 tomates",
+      "50g d'olives noires",
+      "1 poivron rouge",
+      "4 filets d'anchois",
+      "3 cuillères à soupe d'huile d'olive",
+      "1 cuillère à soupe de vinaigre de vin"
+    ],
+    "instructions": "Cuire les haricots verts à l'eau bouillante 8 minutes. Couper les tomates et le poivron en dés. Émincer les oeufs durs. Dans un saladier, assembler tous les ingrédients. Émietter le thon. Disposer les anchois. Préparer une vinaigrette avec l'huile et le vinaigre et assaisonner."
+  },
+  {
+    "title": "Soupe à l'oignon gratinée",
+    "ingredients": [
+      "6 oignons",
+      "1 litre de bouillon de boeuf",
+      "100ml de vin blanc",
+      "4 tranches de pain de campagne",
+      "100g de gruyère râpé",
+      "30g de beurre",
+      "sel",
+      "poivre"
+    ],
+    "instructions": "Émincer finement les oignons et les faire caraméliser dans le beurre à feu doux pendant 30 minutes. Déglacer au vin blanc. Verser le bouillon et laisser mijoter 20 minutes. Verser la soupe dans des bols allant au four. Poser le pain grillé et recouvrir de gruyère. Gratiner 5 minutes au four."
+  },
+  {
+    "title": "Poulet rôti aux herbes",
+    "ingredients": [
+      "1 poulet entier de 1.5kg",
+      "3 gousses d'ail",
+      "1 citron",
+      "thym frais",
+      "romarin frais",
+      "50g de beurre mou",
+      "sel",
+      "poivre"
+    ],
+    "instructions": "Préchauffer le four à 200°C. Mélanger le beurre avec l'ail écrasé, le thym, le romarin, sel et poivre. Glisser ce mélange sous la peau du poulet. Farcir l'intérieur avec le citron coupé en deux. Enfourner 1h15 en arrosant régulièrement. Laisser reposer 10 minutes avant de découper."
+  },
+  {
+    "title": "Tarte flambée alsacienne",
+    "ingredients": [
+      "1 pâte à pain fine",
+      "200g de fromage blanc",
+      "150g de lardons fumés",
+      "2 oignons",
+      "sel",
+      "poivre",
+      "noix de muscade"
+    ],
+    "instructions": "Préchauffer le four à 250°C. Étaler la pâte très finement. Mélanger le fromage blanc avec sel, poivre et muscade. Émincer les oignons. Étaler le fromage blanc sur la pâte. Répartir les oignons et les lardons. Cuire 10 minutes jusqu'à ce que les bords soient bien dorés."
+  },
+  {
+    "title": "Moules marinières",
+    "ingredients": [
+      "2kg de moules de bouchot",
+      "2 échalotes",
+      "200ml de vin blanc sec",
+      "30g de beurre",
+      "persil frais haché",
+      "sel",
+      "poivre"
+    ],
+    "instructions": "Nettoyer et gratter les moules. Émincer les échalotes et les faire revenir dans le beurre. Verser le vin blanc et porter à ébullition. Ajouter les moules, couvrir et cuire 5 minutes en remuant. Les moules sont cuites quand elles sont ouvertes. Parsemer de persil haché."
+  },
+  {
+    "title": "Blanquette de veau",
+    "ingredients": [
+      "800g de veau à braiser",
+      "2 carottes",
+      "1 oignon",
+      "1 bouquet garni",
+      "200ml de crème fraîche épaisse",
+      "2 jaunes d'oeufs",
+      "jus d'un demi citron",
+      "sel",
+      "poivre"
+    ],
+    "instructions": "Couper le veau en cubes et le blanchir 5 minutes. Égoutter et remettre dans la cocotte avec les carottes, l'oignon et le bouquet garni. Couvrir d'eau et cuire 1h30. Préparer une sauce avec la crème, les jaunes d'oeufs et le citron. Lier la sauce au dernier moment hors du feu."
+  },
+  {
+    "title": "Taboulé",
+    "ingredients": [
+      "200g de semoule fine",
+      "3 tomates",
+      "1 concombre",
+      "1 bouquet de persil plat",
+      "1 bouquet de menthe fraîche",
+      "jus de 2 citrons",
+      "4 cuillères à soupe d'huile d'olive",
+      "sel",
+      "poivre"
+    ],
+    "instructions": "Verser de l'eau bouillante sur la semoule, couvrir et laisser gonfler 5 minutes. Égrainer à la fourchette et laisser refroidir. Couper les tomates et le concombre en petits dés. Hacher finement le persil et la menthe. Mélanger tous les ingrédients. Assaisonner avec citron, huile, sel et poivre. Réfrigérer 1 heure avant de servir."
+  },
+  {
+    "title": "Gratin de courgettes",
+    "ingredients": [
+      "4 courgettes",
+      "2 oeufs",
+      "100g de gruyère râpé",
+      "100ml de crème fraîche",
+      "1 gousse d'ail",
+      "sel",
+      "poivre"
+    ],
+    "instructions": "Préchauffer le four à 180°C. Couper les courgettes en rondelles et les faire revenir à la poêle avec l'ail. Battre les oeufs avec la crème, saler et poivrer. Dans un plat à gratin, disposer les courgettes, verser l'appareil et saupoudrer de gruyère. Cuire 30 minutes jusqu'à dorure."
+  },
+  {
+    "title": "Poulet basquaise",
+    "ingredients": [
+      "1 poulet découpé en morceaux",
+      "2 poivrons rouges",
+      "1 poivron vert",
+      "3 tomates",
+      "1 oignon",
+      "2 gousses d'ail",
+      "100g de jambon de Bayonne",
+      "huile d'olive",
+      "sel",
+      "poivre"
+    ],
+    "instructions": "Faire dorer les morceaux de poulet dans l'huile d'olive. Réserver. Dans la même cocotte, faire revenir l'oignon, les poivrons et l'ail émincés. Ajouter les tomates concassées et le jambon. Remettre le poulet, couvrir et laisser mijoter 45 minutes à feu doux. Saler et poivrer."
+  },
+  {
+    "title": "Cake salé lardons fromage",
+    "ingredients": [
+      "200g de farine",
+      "3 oeufs",
+      "100ml d'huile de tournesol",
+      "100ml de lait",
+      "1 sachet de levure chimique",
+      "150g de lardons fumés",
+      "100g d'emmental râpé",
+      "sel",
+      "poivre"
+    ],
+    "instructions": "Préchauffer le four à 180°C. Faire revenir les lardons à sec. Mélanger farine et levure. Incorporer les oeufs, l'huile et le lait. Ajouter les lardons et l'emmental. Saler et poivrer. Verser dans un moule à cake beurré. Cuire 45 minutes."
+  },
+  {
+    "title": "Soupe de potiron",
+    "ingredients": [
+      "800g de potiron",
+      "1 oignon",
+      "500ml de bouillon de légumes",
+      "100ml de crème fraîche",
+      "20g de beurre",
+      "noix de muscade",
+      "sel",
+      "poivre"
+    ],
+    "instructions": "Éplucher et couper le potiron en cubes. Faire revenir l'oignon dans le beurre. Ajouter le potiron et le bouillon. Cuire 20 minutes à feu moyen. Mixer finement. Incorporer la crème fraîche. Assaisonner avec muscade, sel et poivre."
+  },
+  {
+    "title": "Tarte tatin",
+    "ingredients": [
+      "1 pâte feuilletée",
+      "6 pommes Golden",
+      "100g de sucre",
+      "60g de beurre demi-sel"
+    ],
+    "instructions": "Préchauffer le four à 190°C. Dans une poêle allant au four, faire fondre le beurre et le sucre pour obtenir un caramel doré. Éplucher et couper les pommes en quartiers. Les disposer dans le caramel et cuire 10 minutes. Couvrir avec la pâte feuilletée en rentrant les bords. Cuire 25 minutes. Retourner immédiatement à la sortie du four."
+  },
+  {
+    "title": "Filets de cabillaud au beurre citronné",
+    "ingredients": [
+      "4 filets de cabillaud de 150g",
+      "60g de beurre",
+      "1 citron",
+      "persil frais haché",
+      "sel",
+      "poivre"
+    ],
+    "instructions": "Saler et poivrer les filets de cabillaud. Faire fondre le beurre dans une poêle à feu moyen. Cuire les filets 4 minutes de chaque côté. Déglacer avec le jus de citron. Parsemer de persil haché et servir immédiatement."
+  },
+  {
+    "title": "Tajine de poulet aux olives et citrons confits",
+    "ingredients": [
+      "1 poulet découpé en morceaux",
+      "2 citrons confits",
+      "100g d'olives vertes dénoyautées",
+      "2 oignons",
+      "2 gousses d'ail",
+      "1 cuillère à café de gingembre en poudre",
+      "1 cuillère à café de curcuma",
+      "huile d'olive",
+      "coriandre fraîche",
+      "sel",
+      "poivre"
+    ],
+    "instructions": "Faire dorer les morceaux de poulet dans l'huile. Ajouter les oignons émincés, l'ail, le gingembre et le curcuma. Couvrir d'eau et laisser mijoter 40 minutes. Ajouter les olives et les citrons confits coupés en quartiers. Poursuivre la cuisson 15 minutes. Parsemer de coriandre fraîche."
+  },
+  {
+    "title": "Galettes de sarrasin jambon fromage",
+    "ingredients": [
+      "250g de farine de sarrasin",
+      "500ml d'eau froide",
+      "1 oeuf",
+      "1 pincée de sel",
+      "4 tranches de jambon blanc",
+      "100g d'emmental râpé",
+      "beurre demi-sel"
+    ],
+    "instructions": "Mélanger la farine de sarrasin, l'eau, l'oeuf et le sel pour obtenir une pâte lisse. Laisser reposer 1 heure au frais. Cuire les galettes dans une poêle beurrée bien chaude. Garnir chaque galette de jambon et d'emmental. Replier en carré et servir chaud."
+  },
+  {
+    "title": "Velouté d'asperges",
+    "ingredients": [
+      "500g d'asperges blanches",
+      "1 oignon",
+      "500ml de bouillon de volaille",
+      "150ml de crème fraîche liquide",
+      "30g de beurre",
+      "sel",
+      "poivre"
+    ],
+    "instructions": "Éplucher les asperges et les couper en tronçons. Faire revenir l'oignon dans le beurre. Ajouter les asperges et le bouillon. Cuire 20 minutes. Mixer finement. Incorporer la crème fraîche. Ajuster l'assaisonnement et servir chaud."
+  },
+  {
+    "title": "Poulet tikka masala",
+    "ingredients": [
+      "600g de blanc de poulet",
+      "400g de tomates concassées",
+      "200ml de crème de coco",
+      "1 oignon",
+      "3 gousses d'ail",
+      "1 cuillère à soupe de gingembre frais râpé",
+      "2 cuillères à soupe de tikka masala en poudre",
+      "huile",
+      "coriandre fraîche",
+      "sel"
+    ],
+    "instructions": "Couper le poulet en cubes et le faire mariner 1 heure dans les épices, l'ail et le gingembre. Faire dorer le poulet dans l'huile. Faire revenir l'oignon séparément. Ajouter les tomates et laisser réduire 10 minutes. Incorporer la crème de coco et le poulet. Mijoter 15 minutes. Parsemer de coriandre."
+  },
+  {
+    "title": "Gratin de macaronis",
+    "ingredients": [
+      "300g de macaronis",
+      "200ml de crème fraîche épaisse",
+      "150g d'emmental râpé",
+      "50g de parmesan râpé",
+      "30g de beurre",
+      "sel",
+      "poivre",
+      "noix de muscade"
+    ],
+    "instructions": "Cuire les macaronis al dente dans de l'eau salée. Égoutter. Mélanger avec la crème fraîche, la moitié de l'emmental, sel, poivre et muscade. Verser dans un plat à gratin beurré. Recouvrir du reste d'emmental et du parmesan. Parsemer de noisettes de beurre. Gratiner 20 minutes à 200°C."
+  },
+  {
+    "title": "Salade de lentilles aux lardons",
+    "ingredients": [
+      "300g de lentilles vertes du Puy",
+      "150g de lardons fumés",
+      "1 oignon",
+      "1 carotte",
+      "1 bouquet garni",
+      "2 cuillères à soupe de moutarde de Dijon",
+      "3 cuillères à soupe de vinaigre de vin rouge",
+      "4 cuillères à soupe d'huile d'olive",
+      "sel",
+      "poivre"
+    ],
+    "instructions": "Cuire les lentilles avec l'oignon, la carotte et le bouquet garni 25 minutes. Faire revenir les lardons à sec dans une poêle. Préparer une vinaigrette moutardée avec vinaigre et huile. Égoutter les lentilles, retirer les légumes de cuisson. Mélanger les lentilles chaudes avec les lardons et la vinaigrette."
+  },
+  {
+    "title": "Curry de légumes",
+    "ingredients": [
+      "2 pommes de terre",
+      "1 courgette",
+      "1 poivron rouge",
+      "200g de pois chiches cuits",
+      "400ml de lait de coco",
+      "2 cuillères à soupe de curry en poudre",
+      "1 oignon",
+      "2 gousses d'ail",
+      "huile",
+      "sel"
+    ],
+    "instructions": "Éplucher et couper les légumes en dés. Faire revenir l'oignon et l'ail dans l'huile. Ajouter les épices et mélanger. Incorporer les légumes et les pois chiches. Verser le lait de coco et laisser mijoter 25 minutes jusqu'à ce que les légumes soient tendres."
+  },
+  {
+    "title": "Saumon en papillote",
+    "ingredients": [
+      "4 pavés de saumon de 150g",
+      "1 courgette",
+      "1 citron",
+      "aneth frais",
+      "2 cuillères à soupe d'huile d'olive",
+      "sel",
+      "poivre"
+    ],
+    "instructions": "Préchauffer le four à 200°C. Découper 4 feuilles de papier aluminium. Sur chaque feuille, disposer des rondelles de courgette, un pavé de saumon, des rondelles de citron et de l'aneth. Arroser d'huile d'olive, saler et poivrer. Fermer les papillotes hermétiquement. Cuire 15 minutes."
+  },
+  {
+    "title": "Tartiflette",
+    "ingredients": [
+      "800g de pommes de terre à chair ferme",
+      "200g de lardons fumés",
+      "1 reblochon entier",
+      "2 oignons",
+      "100ml de vin blanc de Savoie",
+      "sel",
+      "poivre"
+    ],
+    "instructions": "Cuire les pommes de terre avec leur peau 20 minutes. Les éplucher et les couper en rondelles. Faire revenir les oignons émincés et les lardons. Déglacer au vin blanc. Dans un plat à gratin, alterner couches de pommes de terre et mélange lardons-oignons. Poser le reblochon coupé en deux sur le dessus croûte vers le haut. Cuire 25 minutes à 200°C."
+  },
+  {
+    "title": "Penne à l'arrabbiata",
+    "ingredients": [
+      "300g de penne rigate",
+      "400g de tomates concassées",
+      "3 gousses d'ail",
+      "1 piment rouge séché",
+      "3 cuillères à soupe d'huile d'olive",
+      "persil frais haché",
+      "sel"
+    ],
+    "instructions": "Faire chauffer l'huile et faire revenir l'ail émincé et le piment haché 2 minutes. Ajouter les tomates concassées, saler et laisser mijoter 20 minutes. Cuire les penne al dente. Les mélanger à la sauce arrabbiata. Parsemer de persil haché."
+  },
+  {
+    "title": "Croque-monsieur",
+    "ingredients": [
+      "8 tranches de pain de mie",
+      "4 tranches de jambon blanc",
+      "100g d'emmental râpé",
+      "30g de beurre mou",
+      "2 cuillères à soupe de moutarde de Dijon"
+    ],
+    "instructions": "Beurrer un côté de chaque tranche de pain. Étaler la moutarde sur le côté non beurré. Disposer le jambon et l'emmental. Refermer le sandwich beurre vers l'extérieur. Faire dorer dans une poêle à feu moyen ou au four à 200°C pendant 10 minutes en retournant à mi-cuisson."
+  },
+  {
+    "title": "Soupe minestrone",
+    "ingredients": [
+      "2 carottes",
+      "2 branches de céleri",
+      "1 courgette",
+      "1 oignon",
+      "100g de haricots blancs cuits",
+      "100g de petites pâtes",
+      "400g de tomates concassées",
+      "1 litre de bouillon de légumes",
+      "huile d'olive",
+      "parmesan râpé",
+      "sel",
+      "poivre"
+    ],
+    "instructions": "Couper tous les légumes en petits dés. Faire revenir l'oignon dans l'huile. Ajouter les légumes et faire revenir 5 minutes. Verser les tomates et le bouillon. Cuire 20 minutes. Ajouter les haricots et les pâtes, cuire encore 10 minutes. Servir avec du parmesan râpé."
+  },
+  {
+    "title": "Daurade au four aux légumes",
+    "ingredients": [
+      "1 daurade de 800g vidée et écaillée",
+      "2 tomates",
+      "1 courgette",
+      "1 oignon",
+      "3 gousses d'ail",
+      "1 citron",
+      "thym frais",
+      "huile d'olive",
+      "sel",
+      "poivre"
+    ],
+    "instructions": "Préchauffer le four à 200°C. Disposer les légumes coupés en rondelles dans un plat. Placer la daurade dessus. Farcir l'intérieur avec thym, ail et citron. Arroser d'huile d'olive, saler et poivrer. Cuire 30 minutes en arrosant régulièrement."
+  },
+  {
+    "title": "Pâtes au saumon fumé et crème",
+    "ingredients": [
+      "300g de tagliatelles fraîches",
+      "150g de saumon fumé",
+      "200ml de crème fraîche liquide",
+      "1 échalote",
+      "aneth frais",
+      "jus d'un demi citron",
+      "sel",
+      "poivre"
+    ],
+    "instructions": "Cuire les tagliatelles al dente. Faire revenir l'échalote dans un peu de beurre. Ajouter la crème fraîche et laisser réduire 3 minutes. Incorporer le saumon fumé coupé en lanières. Assaisonner avec jus de citron, sel et poivre. Mélanger avec les pâtes égouttées. Parsemer d'aneth frais."
+  },
+  {
+    "title": "Poulet au citron et aux câpres",
+    "ingredients": [
+      "4 escalopes de poulet",
+      "2 citrons",
+      "2 cuillères à soupe de câpres",
+      "100ml de vin blanc sec",
+      "30g de beurre",
+      "2 cuillères à soupe de farine",
+      "sel",
+      "poivre"
+    ],
+    "instructions": "Fariner les escalopes, saler et poivrer. Les faire dorer dans le beurre 4 minutes de chaque côté. Réserver. Déglacer la poêle avec le vin blanc et le jus des citrons. Ajouter les câpres et laisser réduire 3 minutes. Remettre les escalopes et les enrober de sauce."
+  },
+  {
+    "title": "Lasagnes à la bolognaise",
+    "ingredients": [
+      "12 feuilles de lasagne",
+      "400g de viande hachée de boeuf",
+      "400g de tomates concassées",
+      "1 oignon",
+      "2 gousses d'ail",
+      "500ml de béchamel maison",
+      "100g de parmesan râpé",
+      "huile d'olive",
+      "sel",
+      "poivre"
+    ],
+    "instructions": "Préparer la bolognaise en faisant revenir oignon, ail et viande hachée. Ajouter les tomates et mijoter 30 minutes. Dans un plat, alterner couches de pâtes, bolognaise et béchamel. Terminer par la béchamel et le parmesan. Cuire 40 minutes à 180°C."
+  },
+  {
+    "title": "Velouté de carottes au gingembre",
+    "ingredients": [
+      "600g de carottes",
+      "1 oignon",
+      "1 morceau de gingembre frais de 3cm",
+      "500ml de bouillon de légumes",
+      "100ml de crème de coco",
+      "huile",
+      "sel",
+      "poivre"
+    ],
+    "instructions": "Éplucher et couper les carottes en rondelles. Faire revenir l'oignon et le gingembre râpé dans l'huile. Ajouter les carottes et le bouillon. Cuire 25 minutes. Mixer finement. Incorporer la crème de coco. Ajuster l'assaisonnement."
+  },
+  {
+    "title": "Steak tartare",
+    "ingredients": [
+      "400g de boeuf haché de qualité supérieure",
+      "2 jaunes d'oeufs",
+      "2 cuillères à soupe de câpres",
+      "2 cuillères à soupe de cornichons hachés",
+      "1 échalote",
+      "1 cuillère à café de moutarde de Dijon",
+      "sauce Worcestershire",
+      "Tabasco",
+      "sel",
+      "poivre noir"
+    ],
+    "instructions": "Hacher finement l'échalote et les cornichons. Mélanger délicatement la viande hachée avec les jaunes d'oeufs, la moutarde, la sauce Worcestershire, le Tabasco. Incorporer les câpres, l'échalote et les cornichons. Saler et poivrer généreusement. Servir immédiatement avec des frites ou du pain grillé."
+  },
+  {
+    "title": "Fondue savoyarde",
+    "ingredients": [
+      "400g de beaufort",
+      "400g de comté",
+      "200g d'emmental de Savoie",
+      "300ml de vin blanc de Savoie",
+      "1 gousse d'ail",
+      "1 cuillère à soupe de fécule de maïs",
+      "2 cuillères à soupe de kirsch",
+      "pain de campagne"
+    ],
+    "instructions": "Frotter le caquelon avec l'ail. Râper tous les fromages. Verser le vin blanc et chauffer à feu doux. Incorporer les fromages progressivement en remuant en 8. Délayer la fécule dans le kirsch et l'incorporer. Maintenir au chaud sur le réchaud. Servir avec des cubes de pain."
+  },
+  {
+    "title": "Tarte aux poireaux et chèvre",
+    "ingredients": [
+      "1 pâte brisée",
+      "3 poireaux",
+      "1 bûche de chèvre",
+      "3 oeufs",
+      "200ml de crème fraîche liquide",
+      "30g de beurre",
+      "sel",
+      "poivre"
+    ],
+    "instructions": "Préchauffer le four à 180°C. Émincer et faire revenir les poireaux dans le beurre 10 minutes. Battre les oeufs avec la crème, saler et poivrer. Étaler la pâte dans un moule. Disposer les poireaux, verser l'appareil et poser des rondelles de chèvre. Cuire 35 minutes."
+  },
+  {
+    "title": "Côtes de porc à la moutarde",
+    "ingredients": [
+      "4 côtes de porc",
+      "3 cuillères à soupe de moutarde de Dijon",
+      "100ml de crème fraîche épaisse",
+      "1 échalote",
+      "100ml de vin blanc sec",
+      "30g de beurre",
+      "sel",
+      "poivre"
+    ],
+    "instructions": "Saler et poivrer les côtes de porc. Les faire dorer dans le beurre 5 minutes de chaque côté. Réserver. Dans la même poêle, faire revenir l'échalote émincée. Déglacer au vin blanc. Incorporer la moutarde et la crème. Laisser réduire 5 minutes. Remettre les côtes dans la sauce et servir."
+  },
+  {
+    "title": "Salade de pâtes estivale",
+    "ingredients": [
+      "250g de fusilli",
+      "150g de tomates cerises",
+      "100g de mozzarella di bufala",
+      "50g d'olives noires",
+      "1 poivron rouge grillé",
+      "basilic frais",
+      "3 cuillères à soupe d'huile d'olive",
+      "sel",
+      "poivre"
+    ],
+    "instructions": "Cuire les fusilli al dente et les laisser refroidir. Couper les tomates cerises en deux et la mozzarella en dés. Émincer le poivron grillé. Dans un saladier, mélanger les pâtes avec tous les ingrédients. Assaisonner avec l'huile d'olive, sel et poivre. Parsemer de feuilles de basilic frais."
+  },
+  {
+    "title": "Brandade de morue",
+    "ingredients": [
+      "400g de morue salée",
+      "400g de pommes de terre à chair farineuse",
+      "200ml d'huile d'olive",
+      "100ml de crème chaude",
+      "2 gousses d'ail",
+      "sel",
+      "poivre"
+    ],
+    "instructions": "Dessaler la morue 24h dans l'eau froide en changeant l'eau plusieurs fois. Cuire les pommes de terre à l'eau. Pocher la morue 10 minutes dans l'eau frémissante. Effeuiller la morue. Écraser les pommes de terre avec l'ail, incorporer progressivement l'huile d'olive et la crème. Mélanger avec la morue. Saler et poivrer."
   }
 ]

@@ -27,9 +27,9 @@ for r in recettes:
     ingredients_text = ", ".join(r['ingredients'])
 
     text = (
-        f"Recette: {r['title']}\n"
-        f"Ingrédients: {ingredients_text}\n"
-        f"Instructions: {r['instructions']}"
+        f"Recette de : {r['title']}\n"
+        f"Cette recette contient : {ingredients_text}\n"
+        f"Preparation : {r['instructions']}"
     )
     doc = Document(
     content=text,

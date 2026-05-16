@@ -3,3 +3,4 @@ uvicorn==0.29.0
 qdrant-client==1.9.0
 sentence-transformers==2.7.0
 python-dotenv==1.0.0
+ollama==0.4.4
